@@ -30,20 +30,17 @@ const Chat=(props)=>{
     },[]);
     return (
     <div className="">
-        <nav className="blue"> 
-           <div className="navbar-wrapper">
-                <a href="#" className="left brand-logo"> Akhil </a>
-            </div>
-            <ul className="right"> 
-                <li> <a href="" > Home </a></li>
-            </ul>
-        </nav>
         <div className="container">
             <div className="card-panel">
                 <div style={{overflowY:"scroll",height:500}}>
                     {
                         messages.map((message)=>{
-                            return (<div> {message[1]}</div>);
+                            return (
+                                <div style={{margin:"10px 10px 10px 10px"}}>
+                                <div className="teal z-depth-4" style={{display:"inline",padding:"5px",borderRadius:"10px 10px 10px"}}> {message[1]}</div>
+                                <br></br>
+                                </div>
+                            );
                         })
                     } 
                 </div>

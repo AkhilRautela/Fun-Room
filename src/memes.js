@@ -12,12 +12,14 @@ const Memes=()=>{
         );
     },memeslink);
     return (
-        <div>
+        <div className="">
+        <div className="center-align">
             {
                 memeslink.map((x)=>{
-                    return <div> <img src={x} alt="Loading"/> </div>
+                    return <div className="center-align"> <img src={x} alt="Loading" style={{height:"500px",width:"500px"}}/> </div>
                 })
             }
+        </div>
         </div>
     )
 }

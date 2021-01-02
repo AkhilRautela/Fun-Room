@@ -4,6 +4,7 @@ import Startpage from './startpage.js';
 import {useState,useEffect} from 'react';
 import Home from './home.js';
 import Memes from './memes.js';
+import Chat from './chatwithone.js';
 let chk=0;
 const Container=()=>{
     let [chk,setChk]=useState(0);
@@ -27,10 +28,9 @@ const Container=()=>{
         <div style={{height:"200px"}}>
         </div>
             {
-                chk===0?<Memes/>:chk===1?<Login/>:<Signup/>
+                chk===0?<Chat/>:chk===1?<Login/>:<Signup/>
             }
         </div>
     );
 }
 export default Container;
-
